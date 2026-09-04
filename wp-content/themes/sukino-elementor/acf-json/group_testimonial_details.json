@@ -1,0 +1,56 @@
+{
+	"key": "group_testimonial_details",
+	"title": "Testimonial Details",
+	"fields": [
+		{
+			"key": "field_testimonial_patient_name",
+			"label": "Name",
+			"name": "patient_name",
+			"type": "text"
+		},
+		{
+			"key": "field_testimonial_relation",
+			"label": "Relation to Patient",
+			"name": "relation",
+			"type": "text",
+			"instructions": "e.g. Daughter of patient, Son of patient, Patient"
+		},
+		{
+			"key": "field_testimonial_country",
+			"label": "Country",
+			"name": "country",
+			"type": "text",
+			"instructions": "Country the family reached out from, e.g. USA, UAE, Australia."
+		},
+		{
+			"key": "field_testimonial_is_international",
+			"label": "International Family",
+			"name": "is_international",
+			"type": "true_false",
+			"ui": 1
+		},
+		{
+			"key": "field_testimonial_rating",
+			"label": "Rating",
+			"name": "rating",
+			"type": "number",
+			"min": 1,
+			"max": 5,
+			"default_value": 5
+		}
+	],
+	"location": [
+		[
+			{
+				"param": "post_type",
+				"operator": "==",
+				"value": "sukino_testimonial"
+			}
+		]
+	],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"active": true,
+	"show_in_rest": 1
+}

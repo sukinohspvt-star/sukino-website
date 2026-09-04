@@ -1,0 +1,79 @@
+{
+	"key": "group_location_details",
+	"title": "Centre Details",
+	"fields": [
+		{
+			"key": "field_location_address",
+			"label": "Address",
+			"name": "address",
+			"type": "textarea",
+			"rows": 3
+		},
+		{
+			"key": "field_location_city",
+			"label": "City",
+			"name": "city",
+			"type": "text"
+		},
+		{
+			"key": "field_location_phone",
+			"label": "Phone",
+			"name": "phone",
+			"type": "text"
+		},
+		{
+			"key": "field_location_whatsapp",
+			"label": "WhatsApp Number (digits with country code)",
+			"name": "whatsapp",
+			"type": "text"
+		},
+		{
+			"key": "field_location_email",
+			"label": "Email",
+			"name": "email",
+			"type": "email"
+		},
+		{
+			"key": "field_location_map_embed_url",
+			"label": "Google Maps Embed URL",
+			"name": "map_embed_url",
+			"type": "url",
+			"instructions": "Paste the 'src' URL from a Google Maps embed iframe."
+		},
+		{
+			"key": "field_location_working_hours",
+			"label": "Working Hours",
+			"name": "working_hours",
+			"type": "text",
+			"default_value": "24/7"
+		},
+		{
+			"key": "field_location_is_flagship",
+			"label": "Flagship Centre",
+			"name": "is_flagship",
+			"type": "true_false",
+			"ui": 1
+		},
+		{
+			"key": "field_location_gallery",
+			"label": "Photo Gallery",
+			"name": "gallery",
+			"type": "gallery",
+			"return_format": "array"
+		}
+	],
+	"location": [
+		[
+			{
+				"param": "post_type",
+				"operator": "==",
+				"value": "sukino_location"
+			}
+		]
+	],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"active": true,
+	"show_in_rest": 1
+}

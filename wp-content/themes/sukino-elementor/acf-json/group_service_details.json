@@ -1,0 +1,69 @@
+{
+	"key": "group_service_details",
+	"title": "Service Details",
+	"fields": [
+		{
+			"key": "field_service_icon",
+			"label": "Icon",
+			"name": "icon",
+			"type": "image",
+			"return_format": "url",
+			"preview_size": "thumbnail",
+			"library": "all"
+		},
+		{
+			"key": "field_service_short_description",
+			"label": "Short Description",
+			"name": "short_description",
+			"type": "textarea",
+			"instructions": "One or two lines shown on service cards and grids.",
+			"rows": 3
+		},
+		{
+			"key": "field_service_key_features",
+			"label": "Key Features",
+			"name": "key_features",
+			"type": "repeater",
+			"layout": "table",
+			"button_label": "Add Feature",
+			"sub_fields": [
+				{
+					"key": "field_service_feature_text",
+					"label": "Feature",
+					"name": "feature",
+					"type": "text"
+				}
+			]
+		},
+		{
+			"key": "field_service_available_locations",
+			"label": "Available at Centres",
+			"name": "available_locations",
+			"type": "relationship",
+			"post_type": ["sukino_location"],
+			"filters": ["search"],
+			"return_format": "id"
+		},
+		{
+			"key": "field_service_cta_label",
+			"label": "Call to Action Label",
+			"name": "cta_label",
+			"type": "text",
+			"default_value": "Enquire Now"
+		}
+	],
+	"location": [
+		[
+			{
+				"param": "post_type",
+				"operator": "==",
+				"value": "sukino_service"
+			}
+		]
+	],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"active": true,
+	"show_in_rest": 1
+}

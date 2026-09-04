@@ -1,0 +1,60 @@
+{
+	"key": "group_team_member_details",
+	"title": "Team Member Details",
+	"fields": [
+		{
+			"key": "field_team_designation",
+			"label": "Designation",
+			"name": "designation",
+			"type": "text"
+		},
+		{
+			"key": "field_team_qualifications",
+			"label": "Qualifications",
+			"name": "qualifications",
+			"type": "text"
+		},
+		{
+			"key": "field_team_department",
+			"label": "Department",
+			"name": "department",
+			"type": "select",
+			"choices": {
+				"rehabilitation": "Rehabilitation",
+				"palliative-care": "Palliative Care",
+				"home-healthcare": "Home Healthcare",
+				"nursing": "Nursing",
+				"administration": "Administration"
+			},
+			"ui": 1
+		},
+		{
+			"key": "field_team_languages_spoken",
+			"label": "Languages Spoken",
+			"name": "languages_spoken",
+			"type": "text",
+			"instructions": "Comma separated, e.g. English, Hindi, Arabic. Helpful for matching international families with a care coordinator."
+		},
+		{
+			"key": "field_team_bio_short",
+			"label": "Short Bio",
+			"name": "bio_short",
+			"type": "textarea",
+			"rows": 4
+		}
+	],
+	"location": [
+		[
+			{
+				"param": "post_type",
+				"operator": "==",
+				"value": "sukino_team_member"
+			}
+		]
+	],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"active": true,
+	"show_in_rest": 1
+}

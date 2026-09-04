@@ -1,0 +1,53 @@
+/*
+Theme Name: Sukino Elementor
+Theme URI: https://sukino.com
+Author: Sukino Healthcare
+Author URI: https://sukino.com
+Description: A lightweight, fully Elementor-compatible WordPress theme built for Sukino Healthcare — India's continuum-of-care provider for post-hospital rehabilitation, home healthcare, palliative care and end-of-life care. Ships with custom post types for Services, Centres, Team Members, Testimonials and FAQs, shortcodes to render them dynamically inside Elementor, and a dedicated International Patients & Family enquiry workflow. Every page is 100% editable in Elementor.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.6
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sukino-elementor
+Tags: healthcare, elementor, custom-post-types, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+*/
+
+/* Base resets and typography. Elementor controls page-level layout;
+   this file only supplies brand defaults so non-Elementor areas
+   (header, footer, widgets, archives) match the Elementor-built pages. */
+
+body {
+	font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	color: #263238;
+	line-height: 1.7;
+}
+
+a {
+	color: #0f7d6c;
+	transition: color .2s ease;
+}
+
+a:hover,
+a:focus {
+	color: #0b5f52;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	color: #0b3d3a;
+}
+
+.screen-reader-text {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap;
+}
